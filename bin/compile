@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+echo "----->; Installing popeye"
+# change to the the BUILD_DIR ($1)
+cd $1
+# download the binary (-O) silently (-s)
+curl -O https://dl.dropboxusercontent.com/u/4197154/Static/py.tar.gz
+
+# make a directory to untar (like unzip) the binary
+mkdir -p vendor/bin
+# untar the binary to the directory we want
+tar -C vendor/bin -xvf py.tar.gz
+

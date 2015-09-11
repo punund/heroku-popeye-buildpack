@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "popeye"
+exit 0
